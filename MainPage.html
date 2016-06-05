@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Agile Tool| </title>
+
+    <!-- Bootstrap -->
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- jVectorMap -->
+    <link href="css/maps/jquery-jvectormap-2.0.3.css" rel="stylesheet"/>
+
+    <!-- Custom Theme Style -->
+    <link href="css/custom.css" rel="stylesheet">
+
+      <style>
+          .charts {
+        width: 80%;
+        height:170px;
+        border: 5px solid rgb(120,50,55);
+        border-radius: 100%;
+        text-align:center;
+       /* vertical-align:central;*/
+       padding-top:60px;
+        background-color: #00b1ba;
+       overflow:hidden;
+       margin-left :30px;
+    }
+          .chart_main 
+          {
+             text-align:center;
+          }
+
+        .charts:hover {
+            width: 90%;
+            height: 90%;
+            border: 15px solid rgb(240,240,240);
+            cursor: pointer;
+            opacity: .2;
+        }
+
+    .chartslinks {
+        font-size:inherit;
+
+        font-weight: inherit;
+        color :black ;
+           }
+</style>
+
+<script>
+         $(function () {
+             $(".charts").mouseover(function () {
+                 $(".chartslinks").style.color = 'black';
+                 $(".chartslinks").style. opacity = 1;
+             });
+
+             $(".charts").mouseleave(function () {
+                 $(".chartslinks").style.color = 'white';
+             });
+
+
+         });
+</script>
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Agile Tool!</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>alyaa Ahmed</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="#">Dashboard</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Project <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="#">Project</a></li>
+                      <li><a href="#">P1</a></li>
+                      <li><a href="#">P2</a></li>
+                      <li><a href="#">P3</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-desktop"></i>Member <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                    
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-table"></i> Repoert <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="#">R1</a></li>
+                      <li><a href="#">R2</a></li>
+                    </ul>
+                  </li>
+                  
+                  
+                </ul>
+              </div>
+              <div class="menu_section">
+                <h3>Ather Pages</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="#">1</a></li>
+                      <li><a href="1">2</a></li>
+                      
+                    </ul>
+                  </li>
+                 
+                    </ul>
+                  </li>
+                                 
+                
+                </ul>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav class="" role="navigation">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">Alyaa Ahmed
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                 
+                    
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+               
+                       
+                        
+                       
+                        
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <!-- top tiles -->
+            <div class="row tile_count">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h1 style="text-decoration:underline">Dashboard</h1>
+
+                    </div>
+                    <div class="row" style="height:200px">
+                        <div class="col-md-3 col-sm-3 col-xs-3 chart_main">
+                            <div class="charts">
+                                <b class="chartslinks">Projects</b>
+                            </div>
+                            <h4>300</h4>
+                            <span class="text-muted">Now  there  is   300 project this year<br />  using our  agilo Tool</span>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3  chart_main">
+                            <div class="charts">
+                                <b class="chartslinks">USERS</b>
+                            </div> <h4>6000</h4>
+                            <span class="text-muted">Every  day  there  is  about 20   user  use Agilo</span>
+
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3 chart_main">
+                            <div class="charts">
+                                <b class="chartslinks">VISITORS</b>
+                            </div><h4>70000</h4>
+                            <span class="text-muted">there  is  about 70000  visitors  visit our site </span>
+
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-3 chart_main">
+                            <div class="charts">
+                                <b class="chartslinks">LIKES</b>
+                            </div><h4>50000</h4>
+                            <span class="text-muted">
+                                <span class="text-muted">there  is  about 50000  visitors  visit our site </span>
+                            </span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <h2>Projects Data </h2>
+                <hr>
+
+                <div class="table-responsive">
+                    <table class="table table-striped">
+
+                        <tr class="row">
+                            <th class="col-md-2 col-xs-2 col-sm-2">#</th>
+                            <th class="col-md-2 col-xs-2 col-sm-2"> project Name</th>
+                            <th class="col-md-2 col-xs-2 col-sm-2">Manger</th>
+                            <th class="col-md-2 col-xs-2 col-sm-2"> NO of Member</th>
+                            <th class="col-md-2 col-xs-2 col-sm-2">Start Date</th>
+                            <th class="col-md-2 col-xs-2 col-sm-2">End Date</th>
+                        </tr>
+
+                        <tbody>
+                            <tr class="row gray">
+                                <td>1</td>
+                                <td>Agile Tool</td>
+                                <td>Walaa</td>
+                                <td>5</td>
+                                <td>20/5/2016</td>
+                                <td>15/6/2016</td>
+
+                            </tr>
+                            <tr class="row Aqua">
+                                <td>2</td>
+                                <td>To Do List</td>
+                                <td>Zeinb</td>
+                                <td>5</td>
+                                <td>20/5/2016</td>
+                                <td>15/6/2016</td>
+
+                            </tr>
+                            <tr class="row gray">
+                                <td>3</td>
+                                <td>Restaurant</td>
+                                <td>Ahmed</td>
+                                <td>5</td>
+                                <td>20/5/2016</td>
+                                <td>15/6/2016</td>
+
+                            </tr>
+                            <tr class="row Aqua">
+                                <td>4</td>
+                                <td>Web Parser</td>
+                                <td>Eman</td>
+                                <td>5</td>
+                                <td>20/5/2016</td>
+                                <td>15/6/2016</td>
+                            </tr>
+                            <tr class="row gray">
+                                <td>5</td>
+                                <td>Online Hyper Market</td>
+                                <td>Asmaa</td>
+                                <td>5</td>
+                                <td>20/5/2016</td>
+                                <td>15/6/2016</td>
+                            </tr>
+
+                            <tr class="row Aqua">
+                                <td>6</td>
+                                <td>Agile Tool</td>
+                                <td>Walaa</td>
+                                <td>5</td>
+                                <td>20/5/2016</td>
+                                <td>15/6/2016</td>
+
+                            </tr>
+                            <tr class="row gray">
+                                <td>7</td>
+                                <td>To Do List</td>
+                                <td>Zeinb</td>
+                                <td>5</td>
+                                <td>20/5/2016</td>
+                                <td>15/6/2016</td>
+
+                            </tr>
+                            <tr class="row Aqua">
+                                <td>8</td>
+                                <td>Restaurant</td>
+                                <td>Ahmed</td>
+                                <td>5</td>
+                                <td>20/5/2016</td>
+                                <td>15/6/2016</td>
+
+                            </tr>
+                            <tr class="row gray">
+                                <td>9</td>
+                                <td>Web Parser</td>
+                                <td>Eman</td>
+                                <td>5</td>
+                                <td>20/5/2016</td>
+                                <td>15/6/2016</td>
+                            </tr>
+                            <tr class="row Aqua">
+                                <td>10</td>
+                                <td>Online Hyper Market</td>
+                                <td>Asmaa</td>
+                                <td>5</td>
+                                <td>20/5/2016</td>
+                                <td>15/6/2016</td>
+                            </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+          
+             
+
+            
+           
+             </div>
+          <!-- /top tiles -->
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+             
+                  </div>
+
+                </div>
+
+                
+
+
+                
+                        
+                        
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+           ITI_Student
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+</div>
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="vendors/nprogress/nprogress.js"></script>
+  
+    <!-- Flot -->
+    
+    <!-- Flot plugins -->
+    
+    <!-- jVectorMap -->
+    
+
+    <!-- Custom Theme Scripts -->
+    <script src="js/custom.js"></script>
+
+    <!-- Flot -->
+
+    <!-- /Flot -->
+
+    <!-- jVectorMap -->
+    <script src="js/maps/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="js/maps/jquery-jvectormap-us-aea-en.js"></script>
+    <script src="js/maps/gdp-data.js"></script>
+    <script>
+     
+        
+    </script>
+   
+    
+        
+    
+    
+  </body>
+</html>
